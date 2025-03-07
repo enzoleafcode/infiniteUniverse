@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Goodie{% endblock %}
+
+{% block body %}
+    <h1>Create new Goodie</h1>
+
+    {{ include('goodie/_form.html.twig') }}
+
+    <a href="{{ path('app_goodie_index') }}">back to list</a>
+{% endblock %}
